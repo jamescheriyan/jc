@@ -3,8 +3,8 @@ import requests
 import os
 
 # === Config ===
-API_KEY = "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"
-MODEL = "mistralai/mistral-7b-instruct"
+API_KEY = "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"
+MODEL = "deepseek/deepseek-r1:free"
 
 resume_text = """
 James is Dedicated technical support professional with a proven track record in troubleshooting and technical problem resolution across various platforms. Enthusiasm for driving customer experience enhancement through effective communication and proactive problem-solving is evident. Experience in working in a 24x7 environment, monitoring systems, and collaborating with teams aligns well with the commitment to ensuring seamless service delivery. A strong focus on understanding customer needs and implementing process improvements contributes to fostering trust and satisfaction.
