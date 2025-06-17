@@ -177,6 +177,20 @@ Question: {question}
     )
     return response.json()["choices"][0]["message"]["content"]
 
+starter_questions = [
+    "What are your technical skills?",
+    "Describe your experience at Natterbox.",
+    "What is your educational background?",
+    "Summarize your work history.",
+    "What certifications or degrees do you have?",
+    "Where have you worked before?",
+    "What experience do you have in telecom or VoIP?",
+    "How do you handle system monitoring in a 24x7 environment?"
+]
+
 # === Gradio Chatbot Interface ===
-chat = gr.ChatInterface(fn=ask_question, title="📄 Ask Me About My Resume")
+with gr.Blocks(theme="soft") as chat:
+    gr.Image("1-3RGB.jpg", label="James Cheriyan", width=100, height=100)
+    gr.Markdown("### 📄 Ask Me About My Resume")
+    gr.ChatInterface(fn=ask_question, examples=starter_questions)
 chat.launch()
