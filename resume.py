@@ -189,8 +189,6 @@ starter_questions = [
 ]
 
 # === Gradio Chatbot Interface ===
-with gr.Blocks(theme="soft") as chat:
-    gr.Image("1-3RGB.jpg", label="James Cheriyan", width=100, height=100)
-    gr.Markdown("### 📄 Ask Me About My Resume")
-    gr.ChatInterface(fn=ask_question, examples=starter_questions)
-chat.launch()
+
+chat = gr.ChatInterface(fn=ask_question,title="📄 Ask Me About My Resume", examples=starter_questions)
+chat.launch(server_name="0.0.0.0", server_port=8080,share=True)
