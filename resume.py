@@ -3,7 +3,7 @@ import requests
 import os
 
 # === Config ===
-API_KEY = "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"
+API_KEY = "OPENROUTER_API_KEY"
 MODEL = "deepseek/deepseek-r1:free"
 
 resume_text = """
