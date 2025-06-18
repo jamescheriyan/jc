@@ -191,4 +191,4 @@ starter_questions = [
 # === Gradio Chatbot Interface ===
 
 chat = gr.ChatInterface(fn=ask_question,title="📄 Ask Me About My Resume", examples=starter_questions)
-chat.launch(server_name="0.0.0.0", server_port=8080,share=True)
+chat.launch(server_name="0.0.0.0", server_port=8080)
